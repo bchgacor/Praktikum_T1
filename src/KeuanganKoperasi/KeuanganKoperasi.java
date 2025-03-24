@@ -15,6 +15,7 @@ public class KeuanganKoperasi { //nama class utama
     private double sukuBunga;     
     private double biayaAdmin;    
 
+    //constructor
     public KeuanganKoperasi(String namaKoperasi, double saldoAwal, double sukuBunga, double biayaAdmin) {
         this.namaKoperasi = namaKoperasi;
         this.totalSaldo = saldoAwal;
