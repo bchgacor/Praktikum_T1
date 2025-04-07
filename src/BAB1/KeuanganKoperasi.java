@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package KeuanganKoperasi; // Nama package
+package BAB1; // Nama package
 
 /**
  * Program Sistem Keuangan Koperasi
@@ -15,13 +15,7 @@ public class KeuanganKoperasi { //nama class utama
     private double sukuBunga;     
     private double biayaAdmin;    
 
-    //constructor
-    public KeuanganKoperasi(String namaKoperasi, double saldoAwal, double sukuBunga, double biayaAdmin) {
-        this.namaKoperasi = namaKoperasi;
-        this.totalSaldo = saldoAwal;
-        this.sukuBunga = sukuBunga;
-        this.biayaAdmin = biayaAdmin;
-    }
+
 
     //method untuk menambah saldo/setor uang
     public void setor(double jumlah) {
@@ -64,7 +58,7 @@ public class KeuanganKoperasi { //nama class utama
 
     //main method untuk menjalankan program
     public static void main(String[] args) {
-        KeuanganKoperasi koperasi = new KeuanganKoperasi("Koperasi Quantum Dana", 1000000, 2.5, 5000);
+        KeuanganKoperasi koperasi = new KeuanganKoperasi();
         koperasi.cekSaldo();
 
         koperasi.setor(500000);   
